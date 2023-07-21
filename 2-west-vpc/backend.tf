@@ -4,6 +4,7 @@ terraform {
     }
 }
 
+
 terraform {
     backend "s3" {
         key = "networking/prod-vpc-west/terraform.tfstate"
