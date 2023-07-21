@@ -1,3 +1,6 @@
+# Windows
+$env:AWS_PROFILE="infra"
+
 terraform init
 
 terraform validate
