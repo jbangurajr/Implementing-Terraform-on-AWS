@@ -6,3 +6,12 @@ terraform plan -out vpc.tfplan
 
 # Apply the deployment
 terraform apply "vpc.tfplan"
+
+
+# State migration module
+
+# Create backend config file
+backend.tf
+
+# Update the region, bucket, and dynamodb table
+terraform init -backend-config="bucket=BUCKET_NAME" -backend-config="region=REGION_NAME" -backend-config="dynamodb_table=TABLE_NAME"
