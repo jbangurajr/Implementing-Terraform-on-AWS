@@ -422,7 +422,7 @@ resource "aws_codepipeline" "codepipeline" {
     }
   }
   ################### Uncomment after first deployment ###########################
-  /*
+  
   stage {
     name = "UAT"
 
@@ -557,7 +557,7 @@ resource "aws_codepipeline" "codepipeline" {
       }
     }
   }
-*/
+
   ################################################################################
 }
 
